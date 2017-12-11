@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Baloo+Bhaijaan'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <audio id="myAudio">
+  <source src="http://res.cloudinary.com/dhjypclhx/video/upload/v1503501517/Sleigh-bells-sound_ziilud.mp3" type="audio/mpeg">
+</audio>
+<div class = "container-fluid">
+ <h1 class = "text-center">Pomodoro Clock</h1>
+  <div class = "row">  
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center" >
+      <div class="row params">
+           <div class = "col-xs-6">Session Time</div>
+           <div class = "col-xs-6">Break Time</div>
+       </div>   
+      <div class="row params">
+           <div class = "col-xs-2 session-less arrow">&#9664</div>
+           <div class = "col-xs-2 session">1</div>
+           <div class = "col-xs-2 session-more arrow">&#9654</div>         
+           <div class = "col-xs-2 break-less arrow">&#9664</div>
+           <div class = "col-xs-2 break">1</div>
+           <div class = "col-xs-2 break-more arrow">&#9654</div>  
+       </div>  
+        <div class="clock">
+          <div class=" center-block test ">
+            <div class="liquid"></div>
+          </div>
+          <h2 class ="text-center timer">
+            <span id="minutes">1</span>:<span id="seconds">00</span> 
+            <br><span id="state">Session</span>
+          </h2>
+        </div>  
+        <div class="bio">
+          <strong>Designed and Coded by <a href="https://atalero.github.io/" target="blank">&nbsp Andres Talero</a></strong>
+        </div> 
+      </div>  
+    <div class="col-md-4"></div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
